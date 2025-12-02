@@ -30,3 +30,13 @@ agent = Agent(
 agent.print_response(input="my name is Brij Patel")
 
 agent.print_response(input="Tell me What is my name?")
+
+
+messages = agent.get_chat_history(session_id=session_id)
+
+for message in messages:
+    role, content = message.role, message.content
+    if role == "system":
+        continue
+    else:
+        print(f"Role : {role}, Message : {content}")
