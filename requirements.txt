@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+ipykernel
+agno
+openai
+python-dotenv
+sqlalchemy
+ddgs
